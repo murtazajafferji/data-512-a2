@@ -28,24 +28,25 @@ Wikipedia data with ORES score:
   page	country	rev_id	predicted_quality_score
   - Considerations: A predicted_quality_score of None means that the revision_id was not found by ORES.
   page	country	rev_id	predicted_quality_score
-| Header                  | Description                                                                                                   |
-|-------------------------|---------------------------------------------------------------------------------------------------------------|
-| page                   | Title of the Wikipedia article. This column is not directly used in our analysis.                                                                               |
-| country                   | Country of the politician's nationality                                                                               |
-| rev_id      | The revision_id of the last edit to the Wikipedia article             |
-| predicted_quality_score   | ORES estimate of the quality of the article. Possible values are FA, GA, B, C, Start, Stub, or None |
+  
+| Header                  | Description                                                                                                |
+|-------------------------|------------------------------------------------------------------------------------------------------------|
+| page                    | Title of the Wikipedia article. This column is not directly used in our analysis.                          |
+| country                 | Country of the politician's nationality                                                                    |
+| rev_id                  | The revision_id of the last edit to the Wikipedia article                                                  |
+| predicted_quality_score | ORES estimate of the quality of the article. Possible values are FA, GA, B, C, Start, Stub, or None        |
 
 Politician article counts by country with populaton:
   - Data sources: Wikipedia dataset, ORES, population dataset
   - Filename: politician_article_counts_by_country_with_population.csv
   - Considerations: Data was cleansed in the population dataset in order to correctly map the Geography column to the country column in the Wikipedia dataset; e.g. "St. Kitts-Nevis" was replaced with "Saint Kitts and Nevis". Values where matches were not found in either the Wikipedia dataset or the population dataset were not included in this dataset.
 
-| Header                  | Description                                                                                                   |
-|-------------------------|---------------------------------------------------------------------------------------------------------------|
-| country                   |  Name of the country                                                                               |
-| article count                   | Number of Wikipedia articles that exist about politicians by country                                                                              |
-| quality count                   | Number of Wikipedia articles that are classified as quality, meaning scored as FA (Featured artcile) or GA (Good article) by ORES, by country                                                                             |
-| population (millions)      | Population for each country, in millions of people            |
+| Header                  | Description                                                                                                |
+|-------------------------|------------------------------------------------------------------------------------------------------------|
+| country                 |  Name of the country                                                                                       |
+| article count           | Number of Wikipedia articles that exist about politicians by country                                       |
+| quality count           | Number of Wikipedia articles that are classified as quality, meaning scored as FA (Featured artcile) or GA (Good article) by ORES, by country                                                                                                     |
+| population (millions)   | Population for each country, in millions of people                                                         |
 
 ## Visualizations Created
 ![alt text](https://github.com/murtazajafferji/data-512-a2/blob/master/highest_politician_articles_per_capita.png)
