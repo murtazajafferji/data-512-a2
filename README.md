@@ -48,7 +48,7 @@ Politician article counts by country with populaton:
 | quality count           | Number of Wikipedia articles that are classified as quality, meaning scored as FA (Featured artcile) or GA (Good article) by ORES, by country                                                                                                     |
 | population (millions)   | Population for each country, in millions of people                                                         |
 
-## Visualizations Created
+## Tables Created
 ![alt text](https://github.com/murtazajafferji/data-512-a2/blob/master/highest_politician_articles_per_capita.png)
 ![alt text](https://github.com/murtazajafferji/data-512-a2/blob/master/lowest_politician_articles_per_capita.png)
 ![alt text](https://github.com/murtazajafferji/data-512-a2/blob/master/highest_proportion_high_quality.png)
